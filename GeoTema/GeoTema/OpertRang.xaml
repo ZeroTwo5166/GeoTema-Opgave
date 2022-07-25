@@ -1,0 +1,33 @@
+﻿<Window x:Class="GeoTema.OpertRang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoTema"
+        mc:Ignorable="d"
+        Title="OpertRang" Height="870" Width="600">
+    <Canvas>
+        <Label Content="Brug ID kun for at redigere eller at slette" FontSize="15px" Canvas.Left="200" Canvas.Top="177" Height="32" Width="278"></Label>
+
+        <Label Content="Opret Rang Window"  FontSize="40px" Canvas.Right="350" Canvas.Left="113" Canvas.Top="26"></Label>
+
+        <Label Content="ID" FontWeight="Bold" FontSize="20px" Canvas.Left="49" Canvas.Top="141"/>
+        <TextBox x:Name="id_txt" Background="Pink" Height="40px" FontSize="25px" RenderTransformOrigin="-1.044,-2.496" Width="304" Canvas.Top="141" Canvas.Left="200"/>
+
+        <Label Content="Rang" FontWeight="Bold" FontSize="20px" Margin="35,112,750,433" Canvas.Top="146" Width="70" Canvas.Left="11"/>
+        <TextBox x:Name="rang_txt" Background="Pink" Height="40px" Margin="200,113,450,451" FontSize="25px" RenderTransformOrigin="-1.044,-2.496" Width="304" Canvas.Top="141"/>
+
+        <Label Content="Fødselsrate" FontWeight="Bold" FontSize="20px" Margin="35,182,718,384" RenderTransformOrigin="0.5,0.5" Canvas.Top="170" Canvas.Left="8"/>
+        <TextBox x:Name="fødselsrate_txt" Background="Pink" Height="40px" Margin="200,177,450,387" FontSize="25px" Canvas.Top="173" Width="304"/>
+
+        <Button x:Name="opret_btn" Content="Opret" Width="113" Height="50px" FontSize="30px" Canvas.Left="43" Canvas.Top="440" Click="opret_btn_Click" ></Button>
+        <Button x:Name="rediger_btn" Content="Rediger" Width="113" Height="50px" FontSize="30px" Canvas.Left="183" Canvas.Top="440" Click="rediger_btn_Click"/>
+        <Button x:Name="slet_btn" Content="Slet" Width="113" Height="50px" FontSize="30px" Canvas.Left="321" Canvas.Top="440" Click="slet_btn_Click"/>
+        <Button x:Name="tilbage_btn" Content="Tilbage" Width="113" Height="50px" FontSize="30px" Canvas.Left="455" Canvas.Top="440" Click="tilbage_btn_Click"/>
+
+
+        <DataGrid x:Name="datagridRang" Canvas.Left="43" Canvas.Top="528" Height="288" Width="525"/>
+
+
+    </Canvas>
+</Window>

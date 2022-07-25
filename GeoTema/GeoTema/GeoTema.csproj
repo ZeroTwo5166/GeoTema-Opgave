@@ -222,8 +222,20 @@
     <Compile Include="AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OpertRang.xaml.cs">
+      <DependentUpon>OpertRang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpretBruger.xaml.cs">
+      <DependentUpon>OpretBruger.xaml</DependentUpon>
+    </Compile>
     <Compile Include="OpretLand.xaml.cs">
       <DependentUpon>OpretLand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpretLandSU.xaml.cs">
+      <DependentUpon>OpretLandSU.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpretRangSU.xaml.cs">
+      <DependentUpon>OpretRangSU.xaml</DependentUpon>
     </Compile>
     <Compile Include="StandardUserWindow.xaml.cs">
       <DependentUpon>StandardUserWindow.xaml</DependentUpon>
@@ -247,7 +259,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="OpertRang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpretBruger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="OpretLand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpretLandSU.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpretRangSU.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,11 +1,11 @@
-﻿<Window x:Class="GeoTema.OpretLand"
+﻿<Window x:Class="GeoTema.OpretLandSU"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GeoTema"
         mc:Ignorable="d"
-        Title="OpretLand" Height="900" Width="600">
+        Title="OpretLandSU" Height="900" Width="600">
     <Canvas>
         <Label Content="Brug ID kun for at redigere eller at slette" FontSize="15px" Canvas.Left="200" Canvas.Top="177" Height="32" Width="278"></Label>
 

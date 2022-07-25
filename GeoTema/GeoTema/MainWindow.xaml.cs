@@ -32,16 +32,6 @@ namespace GeoTema
         SqlConnection sqlCon = new SqlConnection(@"Data Source=10.0.4.116;Initial Catalog=GeoTema;User ID=subarna;Password=DryOrc5166; Encrypt=False");
 
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if(ComboBoxUser.SelectedItem != null) 
-            {
-                string s1 = ComboBoxUser.SelectedValue.ToString();
-                MessageBox.Show(s1);
-            } 
-                
-        }
-
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -96,9 +86,6 @@ namespace GeoTema
         
         }
 
-        private void Register_Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }

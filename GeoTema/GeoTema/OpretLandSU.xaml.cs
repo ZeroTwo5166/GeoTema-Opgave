@@ -17,48 +17,18 @@ using System.Windows.Shapes;
 namespace GeoTema
 {
     /// <summary>
-    /// Interaction logic for OpretLand.xaml
+    /// Interaction logic for OpretLandSU.xaml
     /// </summary>
-    public partial class OpretLand : Window
+    public partial class OpretLandSU : Window
     {
-        public OpretLand()
+        public OpretLandSU()
         {
             InitializeComponent();
             LoadGridLand();
         }
+
         SqlConnection con = new SqlConnection("Data Source=10.0.4.116;Initial Catalog=GeoTema;User ID=subarna;Password=DryOrc5166; Encrypt=False");
 
-        private void ClearData()
-        {
-            id_txt.Clear();
-            land_txt.Clear();
-            verdensdel1_txt.Clear();
-            verdensdel2_txt.Clear();
-            
-        }
-
-        public bool IsValidForLand()
-        {
-            if (land_txt.Text == string.Empty)
-            {
-                MessageBox.Show("Indtast Land", "FEJL", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
-            }
-
-            if (verdensdel1_txt.Text == string.Empty)
-            {
-                MessageBox.Show("Indtast Verdensdel 1", "FEJL", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
-            }
-
-            if (verdensdel2_txt.Text == string.Empty)
-            {
-                MessageBox.Show("Indtast Verdensdel 2", "FEJL", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
-            }
-
-            return true;
-        }
 
         private void LoadGridLand()
         {
@@ -76,6 +46,16 @@ namespace GeoTema
             datagridLand.ItemsSource = dt.DefaultView;
         }
 
+        private void ClearData()
+        {
+            id_txt.Clear();
+            land_txt.Clear();
+            verdensdel1_txt.Clear();
+            verdensdel2_txt.Clear();
+
+        }
+
+
         private void opret_btn_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -91,7 +71,7 @@ namespace GeoTema
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    
+
 
                     MessageBox.Show("Land data oprettet", "Gemt", MessageBoxButton.OK, MessageBoxImage.Information);
                     ClearData();
@@ -126,7 +106,7 @@ namespace GeoTema
                 con.Close();
                 ClearData();
                 LoadGridLand();
-               
+
 
             }
 
@@ -156,9 +136,34 @@ namespace GeoTema
 
         private void tilbage_btn_Click(object sender, RoutedEventArgs e)
         {
-            AdminWindow adminWindow = new AdminWindow();
-            adminWindow.Show();
+            SuperUserWindow suWindow = new SuperUserWindow();
+            suWindow.Show();
             this.Close();
         }
+
+        public bool IsValidForLand()
+        {
+            if (land_txt.Text == string.Empty)
+            {
+                MessageBox.Show("Indtast Land", "FEJL", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            if (verdensdel1_txt.Text == string.Empty)
+            {
+                MessageBox.Show("Indtast Verdensdel 1", "FEJL", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            if (verdensdel2_txt.Text == string.Empty)
+            {
+                MessageBox.Show("Indtast Verdensdel 2", "FEJL", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            return true;
+        }
+
+
     }
 }

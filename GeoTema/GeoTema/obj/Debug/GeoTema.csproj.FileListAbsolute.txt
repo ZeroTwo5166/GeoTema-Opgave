@@ -104,3 +104,11 @@ C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\SuperUserWindow.g.cs
 C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\SuperUserWindow.baml
 C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretLand.g.cs
 C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretLand.baml
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpertRang.g.cs
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpertRang.baml
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretBruger.g.cs
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretBruger.baml
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretLandSU.g.cs
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretRangSU.g.cs
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretLandSU.baml
+C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\obj\Debug\OpretRangSU.baml

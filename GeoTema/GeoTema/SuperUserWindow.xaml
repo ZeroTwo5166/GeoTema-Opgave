@@ -7,40 +7,11 @@
         mc:Ignorable="d"
         Title="SuperUserWindow" Height="650" Width="915">
     <Canvas >
-        <Label Content="Super Bruger Window"  FontSize="40px" Canvas.Right="350" Canvas.Left="280" Canvas.Top="22" Width="427"></Label>
+        <Label Content="Super Bruger Window" FontWeight="Bold" FontSize="40px" Canvas.Right="350" Canvas.Left="225" Canvas.Top="37"></Label>
 
-        <Label Content="ID" FontWeight="Bold" FontSize="20px" Canvas.Left="50" Canvas.Top="108"/>
-        <TextBox x:Name="id_txt" Background="Pink" Height="40px" FontSize="25px" RenderTransformOrigin="-1.044,-2.496" Width="253" Canvas.Top="105" Canvas.Left="200"/>
-
-        <Label Content="LAND" FontWeight="Bold" FontSize="20px" Margin="40,112,750,433" Canvas.Left="10" Canvas.Top="52" Width="70"></Label>
-        <TextBox x:Name="land_txt" Background="Pink" Height="40px" Margin="200,113,450,451" FontSize="25px" RenderTransformOrigin="-1.044,-2.496" Width="253" Canvas.Top="49"/>
-
-        <Label Content="VERDENSDEL 1" FontWeight="Bold" FontSize="20px" Margin="40,182,718,384" RenderTransformOrigin="0.5,0.5" Canvas.Top="44" Canvas.Left="7">
-
-        </Label>
-        <TextBox x:Name="verdensdel1_txt" Background="Pink" Height="40px" Margin="200,177,450,387" FontSize="25px" Canvas.Top="45" Width="253"/>
-
-        <Label Content="VERDENSDEL 2" FontWeight="Bold" FontSize="20px" Margin="55,240,770,324" Canvas.Top="44" RenderTransformOrigin="0.584,1.128" Canvas.Left="-10"/>
-        <TextBox x:Name="verdensdel2_txt" Background="Pink" Height="40px" Margin="200,240,450,324" FontSize="25px" Canvas.Top="45" Width="253"/>
-
-        <Label Content="RANG" FontWeight="Bold" FontSize="20px" Margin="60,240,770,324" Canvas.Top="-132" RenderTransformOrigin="0.584,1.128" Canvas.Left="450"/>
-        <TextBox x:Name="rang_txt" Background="Pink" Height="40px" Margin="200,240,450,324" FontSize="25px" Canvas.Left="396" Canvas.Top="-134" Width="256"/>
-
-        <Button x:Name="opretLand_btn" Content="Opret Land" Width="155" Height="50px" FontSize="30px" Canvas.Left="50" Canvas.Top="354" Click="opretLand_btn_Click" ></Button>
-        <Button x:Name="clear_btn" Content="Rydde" Width="100px" Height="50px" FontSize="30px" Canvas.Left="335" Canvas.Top="354" Click="clear_btn_Click" />
-        <Button x:Name="logud_btn" Content="Log Ud" Width="109" Height="50px" FontSize="30px" Canvas.Left="781" Canvas.Top="354" Click="logud_btn_Click"/>
-
-        <DataGrid x:Name="datagridLand" Canvas.Left="29" Canvas.Top="422" Height="180" Width="421">
-
-
-        </DataGrid>
-
-        <DataGrid x:Name="datagridRang" Canvas.Left="469" Canvas.Top="422" Height="180" Width="421"/>
-
-
-        <Label Content="Brug ID kun for at redigere eller at slette" FontSize="15px" Canvas.Left="196" Canvas.Top="73" Height="32" Width="278"></Label>
-        <Label Content="FØDSELSRATE" FontWeight="Bold" FontSize="20px" Canvas.Top="215" RenderTransformOrigin="0.584,1.128" Canvas.Left="510"/>
-        <TextBox x:Name="fødselsrate_txt" Background="Pink" Height="40px" FontSize="25px" Canvas.Left="671" Canvas.Top="215" Width="181"/>
-        <Button x:Name="opretRang_btn_Copy" Content="Opret Rang" Width="155" Height="50px" FontSize="30px" Canvas.Left="544" Canvas.Top="354" Click="opretRang_btn_Click" />
+        <Button x:Name="opretLand_btn" Content="Opret Land" Width="170" Height="50px" FontSize="30px" Canvas.Left="57" Canvas.Top="223" Click="opret_btn_Click" ></Button>
+        <Button x:Name="logud_btn" Content="Log Ud" Width="108" Height="50px" FontSize="30px" Canvas.Left="712" Canvas.Top="223" Click="logud_btn_Click"/>
+        <DataGrid x:Name="datagrid" Canvas.Left="57" Canvas.Top="335" Height="242" Width="763"/>
+        <Button x:Name="opretRang_btn1" Content="Opret Rang" Width="170" Height="50px" FontSize="30px" Canvas.Left="372" Canvas.Top="223" Click="opretRang_btn1_Click" />
     </Canvas>
 </Window>

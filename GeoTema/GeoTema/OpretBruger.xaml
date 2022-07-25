@@ -1,0 +1,34 @@
+﻿<Window x:Class="GeoTema.OpretBruger"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoTema"
+        mc:Ignorable="d"
+        Title="OpretBruger" Height="600" Width="400">
+    <Canvas>
+        <TextBlock FontSize="30px" FontWeight="Bold" Canvas.Left="94" Canvas.Top="22" >OpretBruger</TextBlock>
+        <TextBlock Canvas.Left="36" Canvas.Top="159" FontWeight="Bold" Height="31" Width="114" FontSize="20px">Brugernavn</TextBlock>
+        <TextBlock Canvas.Left="38" Canvas.Top="214" FontWeight="Bold" Height="31" Width="136" FontSize="20px"><Run Text="Adgangskode"/></TextBlock>
+        <TextBox x:Name="brugernavn" FontSize="20px" Canvas.Left="179" Canvas.Top="164" Width="141" Height="30px"></TextBox>
+        <TextBox x:Name="adgangskode" FontSize="20px" Canvas.Left="179" Canvas.Top="214" Width="141" Height="30px"/>
+        <TextBlock Canvas.Left="38" Canvas.Top="270" FontWeight="Bold" Height="31" Width="90" FontSize="20px"><Run Language="da-dk" Text="UserRole"/></TextBlock>
+        <ComboBox x:Name="ComboBoxUser" Canvas.Left="184" Canvas.Top="268" Width="136" Height="34">
+            <ComboBoxItem Content="Admin" Name="Admin" ></ComboBoxItem>
+            <ComboBoxItem Content="Super Bruger" Name="SuperBruger" ></ComboBoxItem>
+            <ComboBoxItem Content="Normal Bruger" Name="NormalBruger" ></ComboBoxItem>
+            
+        </ComboBox>
+
+        <Button x:Name="opret" FontSize="20px" Canvas.Left="38" Canvas.Top="326" Width="70" Height="30" Click="opret_Click" >Opret</Button>
+        <Button Name="tilbage" FontSize="20px" Canvas.Left="304" Canvas.Top="326" Width="70" Height="30" Content="Tilbage" Click="tilbage_Click" />
+
+        <DataGrid Canvas.Left="38" Canvas.Top="395" Height="170" Width="324" Name="datagridUsers" ></DataGrid>
+        <Button x:Name="slet" FontSize="20px" Canvas.Left="214" Canvas.Top="326" Width="70" Height="30" Content="Slet" Click="slet_Click"/>
+        <TextBlock Canvas.Left="36" Canvas.Top="111" FontWeight="Bold" Height="31" Width="114" FontSize="20px"><Run Text="ID"/></TextBlock>
+        <TextBox x:Name="id" FontSize="20px" Canvas.Left="179" Canvas.Top="116" Width="141" Height="30"/>
+        <TextBlock Canvas.Left="143" Canvas.Top="98">Brug ID kun for at slette eller at redigere</TextBlock>
+        <TextBlock Canvas.Left="45" Canvas.Top="374">Admin = 1101; SuperBruger = 1110; NormalBruger = 1011</TextBlock>
+        <Button x:Name="rediger" FontSize="20px" Canvas.Left="122" Canvas.Top="326" Width="74" Height="30" Content="Rediger" />
+    </Canvas>
+</Window>

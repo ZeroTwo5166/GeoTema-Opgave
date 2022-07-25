@@ -33,7 +33,7 @@ namespace GeoTema
             string connectionstring = "Data Source=10.0.4.116;Initial Catalog=GeoTema;User ID=subarna;Password=DryOrc5166; Encrypt=False";
             SqlConnection con = new SqlConnection(connectionstring);
 
-            SqlCommand cmd = new SqlCommand("Select * from Rang", con);
+            SqlCommand cmd = new SqlCommand("Select Land.ID, Land.Land, Land.Verdensdel_1, Land.Verdensdel_2, Rang.Rang, Rang.Fødselsrate from Land inner join Rang on Land.ID = Rang.ID", con);
 
             con.Open();
 
@@ -43,7 +43,7 @@ namespace GeoTema
 
             con.Close();
 
-            dataGridForStd.ItemsSource = dt.DefaultView;
+            dataGrid.ItemsSource = dt.DefaultView;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

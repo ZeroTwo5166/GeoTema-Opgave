@@ -8,7 +8,7 @@
         Title="StandardUserWindow" Height="450" Width="800">
     <Canvas>
         <TextBlock FontSize="30px" Canvas.Left="272" Canvas.Top="46" Height="52" Width="357"> Standard Bruger Window</TextBlock>
-        <DataGrid x:Name="dataGridForStd" Margin="371,225,43,59" Height="169" Canvas.Top="-79" Width="655" Canvas.Left="-288"/>
+        <DataGrid x:Name="dataGrid" Margin="371,225,43,59" Height="169" Canvas.Top="-79" Width="655" Canvas.Left="-288"/>
 
         <Button FontSize="20px" Height="40" Width="88" Canvas.Left="356" Canvas.Top="355" Content="Log ud" Click="Button_Click"/>
     </Canvas>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\sugu\source\repos\P2 OOP\GeoTema\GeoTema\App.xaml
-5-426334231
+9-1774728683
 
-10915250334
+14-960453870
 166693103782
-MainWindow.xaml;AdminWindow.xaml;OpretLand.xaml;StandardUserWindow.xaml;SuperUserWindow.xaml;
+MainWindow.xaml;AdminWindow.xaml;OpertRang.xaml;OpretBruger.xaml;OpretLand.xaml;OpretLandSU.xaml;OpretRangSU.xaml;StandardUserWindow.xaml;SuperUserWindow.xaml;
 
 True
 
